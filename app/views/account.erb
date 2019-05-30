@@ -9,8 +9,8 @@
     <% if User.is_logged_in? %>
       <%= Account Name: User.current_user.Name %>
       <br>
-      <%=
-      Your balance is: @user.balance %>
+      <%= Your balance is: @user.balance %>
+
       else
     <a href="/logout">Log Out</a>
 
