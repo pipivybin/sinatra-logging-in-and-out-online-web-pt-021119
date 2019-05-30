@@ -5,7 +5,7 @@ def self.current_user(hash)
 end
 
 def self.is_logged_in?(hash)
-  hash.include?(:user_id)
+  !!hash[:user_id]
 end
 
 end
