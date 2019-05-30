@@ -9,8 +9,8 @@
     <% if Helpers.is_logged_in?(session) %>
       <%= "Account Name: " Helpers.current_user(session).name %>
       <%= "Your Balance: " Helpers.current_user(session).balance %>
-      <% else >
+      <% else %>
       <a href="/">Back to Home page</a>
-      <% end >
+      <% end %>
   </body>
 </html>
