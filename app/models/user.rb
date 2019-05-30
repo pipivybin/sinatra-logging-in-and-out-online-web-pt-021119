@@ -1,6 +1,6 @@
 
 class User
 
-attr_accessor :username, :password, :email
+attr_accessor :username, :password, :balance
 
 end
