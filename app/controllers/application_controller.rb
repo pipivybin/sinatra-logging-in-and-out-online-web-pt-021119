@@ -23,7 +23,7 @@ binding.pry
 
   get '/account' do
     @user = User.find(session[:user_id])
-    binding.pry
+
     erb :account
   end
 
