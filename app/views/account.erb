@@ -7,12 +7,11 @@
   </head>
   <body id="page-top">
     <% if User.is_logged_in? %>
-      <%= Account Name: User.current_user.Name %>
-      <br>
-      <%= Your balance is: @user.balance %>
-
-      else
-    <a href="/logout">Log Out</a>
+      <%= "Account Name: " User.current_user.Name %>
+      <%= "Your Balance: " @user.balance %>
+      <% else >
+      <%= "Back to Home page" User.current_user.Name %>
+    <a href="/home">Log Out</a>
 
   </body>
 </html>
